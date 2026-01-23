@@ -1,37 +1,19 @@
-body {
-    font-family: "Times New Roman", serif;
-    line-height: 1.4;
-    margin: 40px;
+h1 {
+  color: red;
 }
-.f-title {
-    text-align: center;
-    color: #1f4aa8;
-    font-size: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
+.f1 {
+   color: tomato;
+  margin-top: 18pt;
+  margin-bottom: 12pt;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
 }
-.f-section {
-    color: #c00000;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 22px;
+.f2 {
+   color: black;
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: Arial;
 }
-.f-list {
-    margin-left: 45px;
-    font-size: 16px;
-    color: black;
-    list-style-type: circle;
-}
-.f-text {
-    margin-left: 45px;
-    font-size: 16px;
-    color: black;
-}
-.f-list li {
-    margin-bottom: 6px;
-}
-.f-ol {
-    list-style-type: upper-alpha;
-    margin-left: 20px;
-}
- 
