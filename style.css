@@ -1,35 +1,55 @@
-h1 {
-  color: blue;
-}
-.f1 {
-   color: red;
-  font-size: 20pt;
-}
-.f2 {
-   color: black;
-  font-size: 15pt;
+/* 1. Reset & Cơ bản */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+    font-family: "Times New Roman", Times, serif; 
+    line-height: 1.6;
 }
 
+/* 2. Cấu trúc Layout (Gộp Header, Menu, Footer) */
+.container { display: flex; flex-direction: column; height: 100vh; }
 
+.header { 
+    background: url("images/banner.jpg") no-repeat center / 100% 100%; 
+    aspect-ratio: 1500 / 200; width: 100%; flex-shrink: 0; 
+}
 
-.container{
-  display: flex;
-  flexdirection: column;
-  height: 100vh
+.menu, .footer { background-color: #253746; color: #ffffff; font-family: Arial, sans-serif; }
+
+.menu { flex: 0 0 50px; display: flex; align-items: center; padding-left: 20px; }
+.menu a { padding: 10px 20px; color: #ffffff; text-decoration: none; font-size: 14px; transition: 0.3s; }
+.menu a:hover { background-color: #3e5b74; color: #ffd700; }
+
+.content { flex: 1; background-color: #ffffff; overflow: hidden; }
+.content iframe { width: 100%; height: 100%; border: 0; }
+
+.footer { flex: 0 0 40px; display: flex; justify-content: center; align-items: center; font-size: 13px; border-top: 1px solid #444; }
+
+/* 3. Nội dung Chương trình (f-classes) */
+.f-title { color: #1f4aa8; font-size: 26px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px; text-align: left; }
+
+.f-section { 
+    color: tomato; font-size: 18px; font-weight: bold; margin-top: 22px; 
+    font-family: Arial, sans-serif; border-left: 4px solid tomato; 
+    padding-left: 10px; margin-bottom: 10px ; 
 }
-.header{
-  flex: 15%; 
-  background-color: lightgray;
-}
-.menu{
-  flex: 5%;
-  background-color: darkgray;
-}
-.contents{
-  flex: 70%;
-  background-color: white;
-}
-.footer{
-  flex: 10%;
-  background-color: lightgray;
+
+.f-text, .f-list { margin-left: 15px ; font-size: 16px; margin-bottom: 8px ; }
+.f-text { color: #333; line-height: 1.6; }
+
+.f-list { color: black; list-style-type: circle; margin-left: 45px; }
+.f-list li { margin-bottom: 6px; }
+
+.f-ol { list-style-type: upper-alpha; margin-left: 20px; }
+
+/* 4. Phần Giới thiệu cá nhân (Intro) */
+.intro-body { padding: 20px; background-color: #f4f7f9; }
+
+.intro-container { display: flex; justify-content: space-between; align-items: flex-start; }
+.intro-content { flex: 1; order: 1; }
+
+.intro-image { flex: 0 0 180px; order: 2; }
+.intro-image img { 
+    width: 100%; height: auto; border-radius: 10px; 
+    border: 3px solid #1f4aa8; box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
 }
